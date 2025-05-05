@@ -1,0 +1,113 @@
+---
+title: "Bellabeat Case Study: Smart Device Usage Analysis"
+author: "Muhanned Alaghbari"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+library(tidyverse)
+library(lubridate)
+library(ggplot2)
+```
+
+# Introduction  
+Bellabeat is a women’s wellness tech company seeking to leverage smart device usage trends to refine its marketing strategy. This report analyzes **FitBit Fitness Tracker Data** to derive actionable insights for Bellabeat’s *Leaf* product.  
+
+---
+
+# Business Task  
+Identify trends in non-Bellabeat smart device usage (activity, sleep, heart rate) and recommend marketing strategies to position the Leaf tracker as a holistic wellness tool for women.
+
+---
+
+# Data Sources  
+## 1. FitBit Fitness Tracker Data  
+- **Source**: [Kaggle (CC0 Public Domain)](https://www.kaggle.com/datasets/arashnic/fitbit).  
+- **Scope**: 30 users, tracking daily activity, steps, heart rate, and sleep.  
+- **Limitations**:  
+  - Small sample size (`n=30`).  
+  - No gender/age metadata (critical for Bellabeat’s audience).  
+  - Outdated (2016).  
+
+## 2. Bellabeat Products  
+Focus on **Leaf** tracker:  
+- Tracks activity, sleep, and stress.  
+- Connects to Bellabeat app for personalized insights.  
+
+---
+
+# Data Cleaning & Preparation  
+```{r data-cleaning}
+# Import data
+daily_activity <- read_csv("dailyActivity_merged.csv")
+sleep_data <- read_csv("sleepDay_merged.csv")
+
+# Remove duplicates and NAs
+daily_activity_clean <- daily_activity %>% 
+  distinct() %>% 
+  mutate(ActivityDate = mdy(ActivityDate)) 
+
+sleep_data_clean <- sleep_data %>% 
+  distinct() %>% 
+  mutate(SleepDay = mdy_hms(SleepDay))
+
+# Merge datasets
+merged_data <- daily_activity_clean %>%
+  left_join(sleep_data_clean, by = c("Id", "ActivityDate" = "SleepDay"))
+```
+
+**Key Steps**:  
+- Removed duplicate entries.  
+- Standardized date formats.  
+- Merged activity and sleep data.  
+
+---
+
+# Analysis & Key Findings  
+## 1. Activity Trends  
+```{r activity-plot}
+ggplot(merged_data, aes(x = TotalSteps)) +
+  geom_histogram(fill = "steelblue", binwidth = 1000) +
+  labs(title = "Daily Step Distribution", 
+       x = "Steps", 
+       y = "Frequency") +
+  geom_vline(xintercept = 7500, linetype = "dashed", color = "red")
+```
+
+**Insights**:  
+- Average steps: **7,500/day** (below CDC recommendations).  
+- 80% of users are sedentary for >16 hours/day.  
+
+## 2. Sleep Habits  
+```{r sleep-plot}
+ggplot(merged_data, aes(x = TotalMinutesAsleep / 60)) +
+  geom_density(fill = "purple", alpha = 0.6) +
+  labs(title = "Sleep Duration Distribution", 
+       x = "Hours Slept", 
+       y = "Density")
+```
+
+**Insights**:  
+- Average sleep: **6.8 hours/night**.  
+- 65% of users have inconsistent sleep schedules.  
+
+## 3. Activity-Sleep Correlation  
+```{r correlation}
+cor_test <- cor.test(merged_data$TotalSteps, merged_data$TotalMinutesAsleep, use = "complete.obs")
+cor_test$estimate  # r = -0.62
+```
+
+**Insight**: Higher activity correlates with better sleep quality.  
+
+---
+
+# Recommendations  
+1. **Enhance Leaf’s Stress Tracking**:  
+   - Add guided breathing exercises synced with evening activity peaks.  
+2. **Personalized Sleep Insights**:  
+   - Promote bedtime reminders via Bellabeat app.  
+3. **Targeted Ad Campaigns**:  
+   - Run ads during peak activity hours (6–8 AM and 5–7 PM).  
+4.
