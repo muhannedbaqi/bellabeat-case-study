@@ -33,7 +33,14 @@ This project analyzes **FitBit Fitness Tracker data** to identify trends in smar
 2. **Bellabeat Products**: Focus on the *Leaf* tracker and Bellabeat app ecosystem.  
 
 ---
+## 📈 Visualizations  
 
+### Daily Step Distribution vs. CDC Recommendations  
+![Daily Steps](visualizations/steps_plot.png)  
+
+### Sleep Duration vs. Activity Level Correlation  
+![Sleep vs. Activity](visualizations/sleep_)
+---
 ## 🛠️ Tools & Technologies  
 - **R** (Tidyverse, lubridate, ggplot2)  
 - **RMarkdown** for reproducible reporting.  
