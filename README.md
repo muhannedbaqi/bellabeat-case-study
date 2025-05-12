@@ -7,7 +7,7 @@
 ---
 
 ## 📌 Overview  
-<img align="right" width="500" height="400" src="https://polygrowth.io/wp-content/uploads/2022/01/Bellabeat-case-study-1200x675.png">
+<img align="right" width="600" height="400" src="https://polygrowth.io/wp-content/uploads/2022/01/Bellabeat-case-study-1200x675.png">
 
 [Bellabeat]( https://bellabeat.com/) is a company that develops fitness products for women. Their products include smart water bottles, fashionable fitness watches and jewelry, and yoga mats. Users can access their health data collected through these devices in the Bellabeat app.
 
