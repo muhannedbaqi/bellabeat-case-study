@@ -1,9 +1,8 @@
 # 📊 Bellabeat Case Study: Smart Device Usage Analysis  
 
-![Bellabeat Leaf](https://bellabeat.com/wp-content/uploads/2021/11/LEAF_NATURE_WRISTBAND_1-600x600.jpg)  
 
-**Author**: Muhanned Baqi  
-**Date**: October 2023  
+**Author**: Muhanned Abdulbaqi 
+**Date**: April 2025
 
 ---
 
@@ -106,8 +105,8 @@ View the full analysis here:
 
 ## 📬 Contact  
 - **Author**: Muhanned Baqi  
-- **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/your-profile)  
-- **Email**: your.email@domain.com  
+- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/muhannedbaqi)  
+- **Email**: muhannedgh@gmail.com 
 
 ---
 
