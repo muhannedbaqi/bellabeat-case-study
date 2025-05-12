@@ -104,7 +104,7 @@ View the full analysis here:
 ---
 
 ## 📬 Contact  
-- **Author**: Muhanned Baqi  
+- **Author**: Muhanned Abdulbaqi
 - **LinkedIn**: (https://www.linkedin.com/in/muhannedbaqi)  
 - **Email**: muhannedgh@gmail.com 
 
