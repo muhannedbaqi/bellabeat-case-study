@@ -39,7 +39,7 @@ This project analyzes **FitBit Fitness Tracker data** to identify trends in smar
 ![Daily Steps](visualizations/steps_plot.png)  
 
 ### Sleep Duration vs. Activity Level Correlation  
-![Sleep vs. Activity](visualizations/sleep_)
+![Sleep vs. Activity](visualizations/sleep_plot.png)
 ---
 ## 🛠️ Tools & Technologies  
 - **R** (Tidyverse, lubridate, ggplot2)  
