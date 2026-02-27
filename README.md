@@ -10,9 +10,10 @@
 1. [Project Overview](https://github.com/muhannedbaqi/bellabeat-case-study/blob/main/README.md#-overview)
 2. [Business Task](https://github.com/muhannedbaqi/bellabeat-case-study/blob/main/README.md#-business-task)
 3. [Data Sources](https://github.com/muhannedbaqi/bellabeat-case-study/blob/main/README.md#-data-sources)
-4. [Visualizations](https://github.com/muhannedbaqi/bellabeat-case-study/blob/main/README.md#-visualizations)
-5. [Technologies Used](https://github.com/muhannedbaqi/bellabeat-case-study/blob/main/README.md#%EF%B8%8F-tools--technologies)
-6. [Repository Structure](https://github.com/muhannedbaqi/bellabeat-case-study/blob/main/README.md#-repository-structure)
+4. [Analytical Workflow](https://github.com/muhannedbaqi/bellabeat-case-study/edit/main/README.md#-analytical-workflow)
+5. [Visualizations](https://github.com/muhannedbaqi/bellabeat-case-study/blob/main/README.md#-visualizations)
+6. [Technologies Used](https://github.com/muhannedbaqi/bellabeat-case-study/blob/main/README.md#%EF%B8%8F-tools--technologies)
+7. [Repository Structure](https://github.com/muhannedbaqi/bellabeat-case-study/blob/main/README.md#-repository-structure)
 ---
 ## 📌 Overview  
 <img align="right" width="600" height="400" src="https://polygrowth.io/wp-content/uploads/2022/01/Bellabeat-case-study-1200x675.png">
@@ -38,14 +39,48 @@ Bellabeat’s co-founders would like to analyze data from non-Bellabeat fitness 
 
 ---
 
-## 📂 Data Sources  
-1. **FitBit Fitness Tracker Data** ([Kaggle, CC0 Public Domain](https://www.kaggle.com/datasets/arashnic/fitbit))  
-   - 30 users tracked between 2016-04-12 and 2016-05-12.  
-   - Includes daily activity, steps, sleep, and heart rate data.  
-   - **Limitations**: Small sample size, outdated data, no gender-specific metadata.  
-2. **Bellabeat Products**: Focus on the *Leaf* tracker and Bellabeat app ecosystem.  
+## 📂 Data Sources
+
+### FitBit Fitness Tracker Data** ([Kaggle, CC0 Public Domain](https://www.kaggle.com/datasets/arashnic/fitbit))
+- 30 users  
+- Daily activity (steps, intensity, calories)  
+- Sleep data  
+- Minute-level logs  
+- Timeframe: April–May 2016  
+
+### ⚠ Limitations
+
+- Small sample size  
+- No demographic variables  
+- Historical dataset  
+- No stress / menstrual cycle data 
+---
+## 🛠 Analytical Workflow
+
+### 1️⃣ Data Cleaning
+
+- Removed duplicates  
+- Standardized date formats  
+- Dropped null values  
+- Created derived features:
+  - `TotalActiveMinutes`
+  - `ActivityVariance`
+  - `EngagementScore`
 
 ---
+
+### 2️⃣ Behavioral Segmentation
+
+Users classified into:
+
+| Segment | Criteria |
+|----------|----------|
+| Low Engagement | < 5000 steps |
+| Inconsistent Actives | 5000–9999 steps |
+| High Discipline | ≥ 10000 steps |
+
+---
+
 ## 📈 Visualizations  
 
 ### Daily Step Distribution vs. CDC Recommendations  
