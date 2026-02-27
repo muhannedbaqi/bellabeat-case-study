@@ -10,7 +10,7 @@
 1. [Project Overview](https://github.com/muhannedbaqi/bellabeat-case-study/blob/main/README.md#-overview)
 2. [Business Task](https://github.com/muhannedbaqi/bellabeat-case-study/blob/main/README.md#-business-task)
 3. [Data Sources](https://github.com/muhannedbaqi/bellabeat-case-study/blob/main/README.md#-data-sources)
-4. [Analytical Workflow](https://github.com/muhannedbaqi/bellabeat-case-study/edit/main/README.md#-analytical-workflow)
+4. [Analytical Workflow](https://github.com/muhannedbaqi/bellabeat-case-study/tree/main#-analytical-workflow)
 5. [Visualizations](https://github.com/muhannedbaqi/bellabeat-case-study/blob/main/README.md#-visualizations)
 6. [Technologies Used](https://github.com/muhannedbaqi/bellabeat-case-study/blob/main/README.md#%EF%B8%8F-tools--technologies)
 7. [Repository Structure](https://github.com/muhannedbaqi/bellabeat-case-study/blob/main/README.md#-repository-structure)
