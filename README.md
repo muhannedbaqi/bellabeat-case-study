@@ -7,7 +7,7 @@
 ---
 ## Table of Contents
 
-1. [Project Overview](📌-Overview)
+1. [Project Overview](https://github.com/muhannedbaqi/bellabeat-case-study/blob/main/README.md#-overview)
 2. [Phase 1: Ask](#phase-1-ask)
 3. [Phase 2: Prepare](#phase-2-prepare)
 4. [Phase 3: Process](#phase-3-process)
