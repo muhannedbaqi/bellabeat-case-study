@@ -5,7 +5,17 @@
 **Date**: April 2025
 
 ---
+## Table of Contents
 
+1. [Project Overview](📌-Overview)
+2. [Phase 1: Ask](#phase-1-ask)
+3. [Phase 2: Prepare](#phase-2-prepare)
+4. [Phase 3: Process](#phase-3-process)
+5. [Phase 4: Analyze](#phase-4-analyze)
+6. [Phase 5: Share](#phase-5-share)
+7. [Phase 6: Act](#phase-6-act)
+8. [Technologies Used](#technologies-used)
+---
 ## 📌 Overview  
 <img align="right" width="600" height="400" src="https://polygrowth.io/wp-content/uploads/2022/01/Bellabeat-case-study-1200x675.png">
 
