@@ -148,10 +148,27 @@ bellabeat-case-study/
 2. **Targeted Marketing**:  
    - Run ads during peak activity hours (6–8 AM and 5–7 PM).  
 3. **Membership Bundling**:  
-   - Offer discounted Bellabeat Membership with Leaf purchases.  
+   - Offer discounted Bellabeat Membership with Leaf purchases.
+---
+## 💰 Business Impact Projection
+
+Assuming:
+- 5% improvement in subscription conversion  
+- Average CLV = $120  
+- User base = 10,000  
+
+Projected revenue uplift:
+
+**$60,000 annually**
 
 ---
+# 📌 Final Takeaway
 
+Smart device engagement is driven by **habit consistency, not just activity volume**.
+
+By implementing behavioral-trigger automation and segmentation-based marketing, Bellabeat can increase retention, engagement, and monetization.
+
+---
 ## 📄 Report  
 View the full analysis here:  
 [**Bellabeat Case Study Report**](https://github.com/muhannedbaqi/bellabeat-case-study/blob/main/Bellabeat_Case_Study_Report.Rmd)  
